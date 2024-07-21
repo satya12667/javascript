@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maps in javascript</title>
+</head>
+<body>
+  <script>
+    //map method
+    const fruits=new Map([["aple",90],["mango",30],["banana",98]]);
+    let num=fruits.get("aple");
+    console.log(num);
+    //set method
+    const fruits1=new Map();
+    fruits1.set("apple",67)
+    fruits1.set("grape",76)
+    fruits1.set("mangi",567)
+
+    console.log(fruits1);
+    let num1=fruits1.get("apple");
+    console.log(num1
+
+    );
+    //map methods
+    const cars=["swift","audi","bmw","volvo","breeza"];
+    const upper=cars.map(uppercase);
+    console.log(upper);
+    function uppercase(element){
+      return element.toUpperCase();
+      
+    }
+
+
+
+
+
+  </script>
+  
+</body>
+</html>

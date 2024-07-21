@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>promises in javascript</title>
+</head>
+<body>
+  <script>
+    //our task is
+    //1 walk the dog
+    //come to home
+    function walkdog()
+    {
+return new Promise((resolve,reject) => {
+  setTimeout(() => {resolve("you will take the dog")},500);
+} 
+)}
+function comehome()
+    {
+return new Promise((resolve,reject) => {
+  setTimeout(() => {resolve("come back to home ")},3000);
+} 
+)}
+walkdog().then(value => {console.log(value)});
+comehome().then(value => {console.log(value)});
+
+  </script>
+  
+</body>
+</html>

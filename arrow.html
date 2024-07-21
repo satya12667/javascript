@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arrow functions in javascript</title>
+</head>
+<body>
+  <script>
+    //normal function in javascript
+    function person(){
+      let x=10;
+      console.log(x);
+    }
+    //function
+    const hello=function()
+    {
+      console.log("hii");
+    }
+    hello();
+    //arrow in creating function
+    const hello1 = () => console.log("good");
+    hello1()
+    //pass arguments in arrow function
+    const info1= (name,age,branch) => console.log(`good ${name} ${age} ${branch}`);
+    info1("satya",19,"it");
+
+  </script>
+  
+</body>
+</html>

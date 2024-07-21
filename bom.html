@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>javscript bom</h2>
+  <P id="demo">
+    <P id="demo1"></P>
+    <p id="demo2"></p>
+    <P id="demo3"></P>
+
+  </P>
+  <script>
+    //window methods
+    document.getElementById("demo").innerHTML=
+    "bwoser width size" +window.innerWidth+"px<br>"+"browser height"+window.innerHeight;
+    //window screen methods
+    document.getElementById("demo1").innerHTML=
+    "screen width size" +screen.width+"px<br>"+"screen height"+screen.height+"<br>"+"screen color depth"+screen.colorDepth+"px";
+    //window location
+    document.getElementById("demo2").innerHTML=
+    "window location" +window.location.href+"px<br>"+"window location hostname "+window.location.hostname+"<br>"+"window pathname"+window.location.pathname+"<br>"+"window protocol"+window.location.protocol+"<br>"+"window assign"+window.location.assign;
+    //window history
+    document.getElementById("demo3").innerHTML=
+    "window back history" +window.history.go(-1);
+    //pop up
+    console.log(window.alert("wgdhkjfhjkdsgkhb"));
+    //navigator 
+    console.log(navigator.cookieEnabled);
+    console.log(navigator.appCodeName);
+    console.log(navigator.hostname);
+    console.log(navigator.platform);
+    //timing
+    setTimeout(function() { console.log('Delayed message');}, 3000);
+
+//setInterval(function() {console.log('Interval message');}, 10000);
+//cookies 
+document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+console.log(document.cookie);
+document.cookie = cookieName + "=;" + expires + ";path=/";
+
+
+
+
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>

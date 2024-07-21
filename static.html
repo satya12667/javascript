@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ststic class in javascript</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    class Car {
+  constructor(name) {
+    this.name = name;
+  }
+  
+  static hello(x) {
+    return "Hello!!"+x.name;
+  }
+}
+let s1 = new Car("Ford");     
+document.getElementById("demo").innerHTML=car.hello(s1);
+  
+</script>
+</body>
+</html>

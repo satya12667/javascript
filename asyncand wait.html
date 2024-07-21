@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>async and await in javascript</title>
+</head>
+<body>
+  <script>
+    // Define a function walkdog which returns a Promise
+    function walkdog() {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("you will take the dog");
+        }, 500);
+      });
+    }
+
+    function comehome() {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("come back to home ");
+        }, 3000);
+      });
+    }
+
+    async function door() {
+      const walkdog1 = await walkdog();
+      console.log(walkdog1);  // Output: "you will take the dog"
+
+      const home1 = await comehome();
+      console.log(home1);  // Output: "come back to home "
+    }
+
+    door();
+  </script>
+  
+</body>
+</html>

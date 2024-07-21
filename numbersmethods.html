@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>numbers methods</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+
+  <script>
+    //to string 
+    let x=10;
+    console.log(x);
+   const y= (10).toString();
+   console.log(y);
+   //to exponetial
+   const z= (10).toExponential(4);
+   const g= (10).toExponential(0);
+   console.log(g);
+   console.log(z);
+   //to fixed
+   let t=(90).toFixed();
+   console.log(t);
+   let s=(90).toFixed(4);
+   console.log(s);
+   //to precision 
+   let c=(234).toPrecision();
+   console.log(c);
+   let d=(234).toPrecision(4);
+   console.log(d);
+   //value of
+   let m=(234).valueOf();
+   console.log(m);
+   //object methods
+document.getElementById("demo").innerHTML=
+   Number.isInteger(10);
+   Number.isSafeInteger(10);
+   Number.parseFloat("10");
+   Number.parseInt("10");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>inheritance in javascript</title>
+</head>
+<body>
+  <script>
+    class car
+    {
+      constructor(name)
+      {
+        this.name=name;
+    }
+    speak()
+    {
+      console.log(`this ${this.name} sing a song`);
+    }
+    }
+    class dog extends car
+    {
+      speak()
+      {
+      console.log(`this ${this.name} bark a song`);
+      }
+    }
+    const mydog=new dog('rocky');
+    mydog.speak();
+  </script>
+
+  
+</body>
+</html>

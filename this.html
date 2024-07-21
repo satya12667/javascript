@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>this keyword in javascript</title>
+</head>
+<body>
+  <script>
+    const info= {
+      name:"satya",
+      age:24,
+      sayhello2:function(){console.log(`hii i am ${info.name} and my age is ${info.age}`)}
+
+    }
+    info.sayhello2();
+
+  
+  </script>
+  <script>
+    const car={model:2021,name:"volvo",color:"red",
+    s3:function(){
+      console.log(this.model);
+    }
+  }
+  car.s3();
+
+  </script>
+  
+</body>
+</html>

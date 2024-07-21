@@ -1,0 +1,18 @@
+[{"name":"kiran",
+  "age":34,
+  "isemployee":false,
+  "hobbies":["coding","volley ball","scrolling"]
+
+},
+{
+  "name":"siva",
+  "age":3,
+  "isemployee":true,
+  "hobbies":["coding","volley ball","scrolling"]
+},
+{
+  "name":"vamsi",
+  "age":39,
+  "isemployee":false,
+  "hobbies":["coding","volley ball","scrolling"]
+}]

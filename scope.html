@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scope in a  javascript</title>
+</head>
+<body>
+  <script>
+    //local
+    //global
+    //function
+    //block
+    //local
+    let a=20;
+    console.log(a);
+    //global
+    let b=30;
+    s1();
+    s2();
+    function s1()
+    {
+      console.log(b);
+    }
+    function s2()
+    {
+      console.log(b);
+    }
+    //function
+    function sample()
+    {
+      let x=40;
+      console.log(x);
+    }
+    sample();
+    //block
+    {
+      var c=10;
+    }
+    console.log(c)
+  </script>
+  
+</body>
+</html>
